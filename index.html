@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1620501370729-c9c0a403e5ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyOXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            width: 100%;
+            text-align: left;
+            padding-left: 20px;
+            position: absolute;
+            top: 0;
+        }
+        .admin-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: linear-gradient(45deg, #333, #000);
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .admin-button:hover {
+            background: linear-gradient(45deg, #000, #666);
+            box-shadow: 0 7px 14px rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .option {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #333, #000);
+            padding: 16px 32px;
+            font-size: 20px;
+            border-radius: 12px;
+            transition: 0.4s;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: 250px;
+            text-align: center;
+        }
+        .option:hover {
+            background: linear-gradient(45deg, #000, #666);
+            transform: scale(1.05);
+            box-shadow: 0 7px 14px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EZY Bike Rental Management</h1>
+        <a href="admin_login.php" class="admin-button">Admin Login</a>
+    </header>
+    <main>
+        <div class="options">
+            <a href="customer_login.php" class="option">User Login / Register</a>
+            <a href="list.php" class="option">Available Bikes</a>
+        </div>
+    </main>
+</body>
+</html>
